@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary, ROT13, and Base64 Decoder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Binary to Text Converter</h2>
+    <input type="text" id="binaryInput" placeholder="Enter binary text...">
+    <button onclick="convertBinaryToText()">Convert</button>
+    <p id="binaryOutput"></p>
+
+    <h2>ROT13 Decoder</h2>
+    <input type="text" id="rot13Input" placeholder="Enter ROT13 text...">
+    <button onclick="decodeRot13()">Decode</button>
+    <p id="rot13Output"></p>
+
+    <h2>Base64 Decoder</h2>
+    <input type="text" id="base64Input" placeholder="Enter Base64 text...">
+    <button onclick="decodeBase64()">Decode</button>
+    <p id="base64Output"></p>
+
+    <script src="./main.js"></script>
+</body>
+</html>
